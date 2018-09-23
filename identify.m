@@ -1,4 +1,5 @@
-function izhod = naloga4(vhod, Fs)
+% TODO: add comments (was made in a rush)
+function izhod = identify(vhod, Fs)
 	freq_res = Fs/length(vhod);
 	freq = fft(vhod);
 	str = abs(freq).^2/length(vhod);
